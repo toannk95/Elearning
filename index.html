@@ -15,6 +15,10 @@
     <!-- FONT GOOGLE -->
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300,400,700&display=swap" rel="stylesheet">
 
+    <!-- OWL CAROUSEL -->
+    <link rel="stylesheet" href="./css/owl.carousel.min.css">
+    <link rel="stylesheet" href="./css/owl.theme.default.min.css">
+
     <!-- MAIN CSS -->
     <link rel="stylesheet" href="./css/main.css">
 </head>
@@ -24,7 +28,7 @@
     <header>
         <nav class="myNavBar navbar navbar-expand-lg navbar-light">
 
-            <div class="col-7">
+            <div class="col-7 myNavBar__column">
                 <div class="myNavBar__left">
 
                     <a class="navbar-brand" href="#">
@@ -86,17 +90,246 @@
 
     <!-- COVER -->
     <section class="cover">
-
+        <div class="cover__content">
+            <h1>Learn on your schedule</h1>
+            <p>Study any topic, anytime. Explore thousands of coures for as low as $19.99</p>
+            <form action="" class="cover__form">
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="What do you want to learn ?">
+                    <div class="input-group-append">
+                        <span class="input-group-text" id="basic-addon2">
+                            <i class="fa fa-search"></i>
+                        </span>
+                    </div>
+                </div>
+            </form>
+        </div>
     </section>
 
     <!-- INTRO -->
     <section class="intro">
-
+        <div class="intro__content">
+            <div class="row">
+                <div class="col-4">
+                    <div class="intro__items">
+                        <div class="intro__icon">
+                            <i class="fa fa-bullseye"></i>
+                        </div>
+                        <div class="intro__detail">
+                            <p>80,000 online course</p>
+                            <p>Explore a variety of fresh topics</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="intro__items">
+                        <div class="intro__icon">
+                            <i class="fa fa-spinner"></i>
+                        </div>
+                        <div class="intro__detail">
+                            <p>Expert Instruction</p>
+                            <p>Find the right instructor for you</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="intro__items">
+                        <div class="intro__icon">
+                            <i class="fa fa-sync-alt"></i>
+                        </div>
+                        <div class="intro__detail">
+                            <p>Lifetime access</p>
+                            <p>Learn on your schedule</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
     <!-- COURES -->
     <section class="coures">
+        <div class="courses__content">
+            <div class="row">
+                <div class="col-4 courses__left">
+                    <div class="">
+                        <h2>The world's larget selection of course</h2>
+                        <p>Choose from over 80,000 online video course with new additions published every month </p>
+                    </div>
+                </div>
+                <div class="col-8">
+                    <ul class="nav nav-tabs" id="myTab" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link active" id="dev-tab" data-toggle="tab" href="#dev" role="tab">Development</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="design-tab" data-toggle="tab" href="#design" role="tab">Design</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="bussiness-tab" data-toggle="tab" href="#bussiness" role="tab">Bussiness</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="it-tab" data-toggle="tab" href="#it" role="tab">IT</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="personal-tab" data-toggle="tab" href="#personal" role="tab">Personal</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="marketing-tab" data-toggle="tab" href="#marketing" role="tab">Marketing</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="photography-tab" data-toggle="tab" href="#photography" role="tab">Photography</a>
+                        </li>
+                    </ul>
+                    <div class="tab-content" id="myTabContent">
+                        <div class="tab-pane fade show active" id="dev" role="tabpanel">
+                            <div class="owl-carousel owl-theme coures__carousel">
+                                <div class="card">
+                                    <img class="card-img-top" src="./image/kh1.jpg" alt="Course1">
+                                    <div class="card-body">
+                                        <h5 class="card-title">The Ultimate MySQL Bootcamp: Go from SQL Beginner to Expert</h5>
+                                        <p class="card-text">Coll Steele Ian Schoonover</p>
+                                        <div class="card__stars">
+                                            <span>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star-half"></i>
+                                            </span>
+                                            <span class="card__rate">4.6</span>
+                                            <span class="card__total">(11.597)</span>
+                                        </div>
+                                        <div class="card__price">
+                                            <span>$179.99</span>
+                                            <span>$9.99</span>
+                                        </div>
+                                    </div>
+                                </div>
 
+                                <div class="card">
+                                    <img class="card-img-top" src="./image/kh2.jpg" alt="Course1">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Learning Python for Data Analysis and Visualization</h5>
+                                        <p class="card-text">Coll Steele Ian Schoonover</p>
+                                        <div class="card__stars">
+                                            <span>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                            </span>
+                                            <span>4.0</span>
+                                            <span>(11.597)</span>
+                                        </div>
+                                        <div class="card__price">
+                                            <span>$179.99</span>
+                                            <span>$9.99</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="card">
+                                    <img class="card-img-top" src="./image/kh3.jpg" alt="Course1">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Advanced CSS and Sass: Flexbox, Grid, Animations and More!</h5>
+                                        <p class="card-text">Coll Steele Ian Schoonover</p>
+                                        <div class="card__stars">
+                                            <span>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                            </span>
+                                            <span>5</span>
+                                            <span>(11.597)</span>
+                                        </div>
+                                        <div class="card__price">
+                                            <span>$179.99</span>
+                                            <span>$9.99</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="card">
+                                    <img class="card-img-top" src="./image/kh4.jpg" alt="Course1">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Modern JavaScript From The Beginning</h5>
+                                        <p class="card-text">Coll Steele Ian Schoonover</p>
+                                        <div class="card__stars">
+                                            <span>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star-half"></i>
+                                            </span>
+                                            <span>3.5</span>
+                                            <span>(11.597)</span>
+                                        </div>
+                                        <div class="card__price">
+                                            <span>$179.99</span>
+                                            <span>$9.99</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="card">
+                                    <img class="card-img-top" src="./image/kh5.jpg" alt="Course1">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Bootstrap 4 From Scratch With 5 Projects</h5>
+                                        <p class="card-text">Coll Steele Ian Schoonover</p>
+                                        <div class="card__stars">
+                                            <span>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                            </span>
+                                            <span>5</span>
+                                            <span>(11.597)</span>
+                                        </div>
+                                        <div class="card__price">
+                                            <span>$179.99</span>
+                                            <span>$9.99</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="card">
+                                    <img class="card-img-top" src="./image/kh6.jpg" alt="Course1">
+                                    <div class="card-body">
+                                        <h5 class="card-title">iOS 12 & Swift - The Complete iOS App Development Bootcamp</h5>
+                                        <p class="card-text">Coll Steele Ian Schoonover</p>
+                                        <div class="card__stars">
+                                            <span>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>
+                                                <i class="fa fa-star"></i>     
+                                            </span>
+                                            <span>4.0</span>
+                                            <span>(11.597)</span>
+                                        </div>
+                                        <div class="card__price">
+                                            <span>$179.99</span>
+                                            <span>$9.99</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade show" id="design" role="tabpanel">Design</div>
+                        <div class="tab-pane fade show" id="bussiness" role="tabpanel">Bussiness</div>
+                        <div class="tab-pane fade show" id="it" role="tabpanel">IT</div>
+                        <div class="tab-pane fade show" id="personal" role="tabpanel">Personal</div>
+                        <div class="tab-pane fade show" id="marketing" role="tabpanel">Marketing</div>
+                        <div class="tab-pane fade show" id="photography" role="tabpanel">Photography</div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
     <!-- VIEWING -->
@@ -142,6 +375,31 @@
 
     <!-- BS4 -->
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+    <!-- OWL JS -->
+    <script src="./js/owl.carousel.min.js"></script>
+    <script>
+        $('.coures__carousel').owlCarousel({
+            loop: true,
+            margin: 10,
+            nav: true,
+            dots: false,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 3
+                },
+                1000: {
+                    items: 4
+                }
+            }
+        })
+    </script>
+
+    <!-- MAIN JS -->
+    <script src="./js/main.js"></script>
 
 </body>
 
