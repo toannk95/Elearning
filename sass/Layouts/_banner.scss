@@ -1,0 +1,19 @@
+.banner {
+    // background: url() position/bg-size bg-reapeat
+    background: url('../image/udemy-logo-semi-transparent.svg') 0/30% no-repeat, linear-gradient(61deg, $color-purple, $color-blue-1 41%);
+    background-blend-mode: overlay; // làm mờ đi hình ảnh ( thuộc tính của CSS3)
+    height: 325px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    h2 {
+        @include styleText($color-white-0, $fs-4, $fw-0);
+    }
+    p {
+        color: $color-white-0;
+        margin-bottom: 0;
+    }
+    button {
+        margin: $mg-0 + 5 0;
+    }
+}

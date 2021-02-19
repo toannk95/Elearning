@@ -1,0 +1,16 @@
+.categories {
+    margin-top: $mg-3;
+    .categories__content{
+        width: 90%;
+        margin: 0 auto;
+        h2 {
+            font-size: $fs-5;
+        }
+        .categories__items {
+            padding: $pd-1;
+            font-size: $fs-3;
+            border: 1px solid $color-black-1;
+            margin-bottom: $mg-2 - 5;
+        }
+    }
+}
