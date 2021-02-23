@@ -18,3 +18,16 @@ let truncateString = (str, num) => {
     }
     return str;
 }
+
+// Sidebar Mini
+let toggleBtn = document.querySelector('.sidebarMini__button');
+let sidebarMini = document.querySelector('.sidebarMini');
+let switchBtn = document.querySelector('#checkbox');
+
+toggleBtn.addEventListener('click', function() {
+    sidebarMini.classList.toggle('is-opened');
+});
+
+switchBtn.addEventListener('click', function() {
+    document.querySelector('body').classList.toggle('darkMode');
+});

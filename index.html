@@ -7,8 +7,7 @@
     <title>Document</title>
 
     <!-- BS4 CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
     <!-- FONT AWESOME -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
@@ -24,14 +23,34 @@
     <link rel="stylesheet" href="./css/main.css">
 </head>
 
-<body>
+<body class="darkMode">
+
+    <!-- SIDEBAR MINI -->
+    <div class="sidebarMini">
+        <button class="sidebarMini__button">
+            <i class="fa fa-cog"></i>
+        </button>
+
+        <div class="sidebarMini__content">
+            <h2>Dark Mode</h2>
+            <div class="d-flex">
+                <span>Off</span>
+                <label class="switch" for="checkbox">
+                    <input type="checkbox" name="" id="checkbox">
+                    <div class="slider">
+
+                    </div>
+                </label>
+                <span>On</span>
+            </div>
+        </div>
+    </div>
+
     <!-- HEADER -->
     <header>
         <nav class="myNavBar navbar navbar-expand-md navbar-light">
             <div class="d-md-none col-sm-2 col-3">
-                <button class="navbar-toggler" type="button" data-toggle="collapse"
-                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                    aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
             </div>
@@ -40,7 +59,8 @@
                 <div class="myNavBar__left">
 
                     <a class="navbar-brand" href="#">
-                        <img src="./image/logo-coral.svg" alt="logo">
+                        <img class="logo-black" src="./image/logo-coral.svg" alt="logo black">
+                        <img class="logo-white" src="./image/logo-coral-white.svg" alt="logo white">
                     </a>
                     <div class="myNavBar__categories">
                         <i class="fa fa-th"></i>
@@ -165,30 +185,25 @@
                 <div class="col-xl-8 col-lg-9 col-md-9 col-12">
                     <ul class="nav nav-tabs" id="myTab" role="tablist">
                         <li class="nav-item">
-                            <a class="nav-link active" id="dev-tab" data-toggle="tab" href="#dev"
-                                role="tab">Development</a>
+                            <a class="nav-link active" id="dev-tab" data-toggle="tab" href="#dev" role="tab">Development</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" id="design-tab" data-toggle="tab" href="#design" role="tab">Design</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" id="bussiness-tab" data-toggle="tab" href="#bussiness"
-                                role="tab">Bussiness</a>
+                            <a class="nav-link" id="bussiness-tab" data-toggle="tab" href="#bussiness" role="tab">Bussiness</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" id="it-tab" data-toggle="tab" href="#it" role="tab">IT</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" id="personal-tab" data-toggle="tab" href="#personal"
-                                role="tab">Personal</a>
+                            <a class="nav-link" id="personal-tab" data-toggle="tab" href="#personal" role="tab">Personal</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" id="marketing-tab" data-toggle="tab" href="#marketing"
-                                role="tab">Marketing</a>
+                            <a class="nav-link" id="marketing-tab" data-toggle="tab" href="#marketing" role="tab">Marketing</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" id="photography-tab" data-toggle="tab" href="#photography"
-                                role="tab">Photography</a>
+                            <a class="nav-link" id="photography-tab" data-toggle="tab" href="#photography" role="tab">Photography</a>
                         </li>
                     </ul>
                     <div class="tab-content" id="myTabContent">
@@ -197,8 +212,8 @@
                                 <div class="card">
                                     <img class="card-img-top" src="./image/kh1.jpg" alt="Course1">
                                     <div class="card-body">
-                                        <h5 class="card-title">The Ultimate MySQL Bootcamp: Go from SQL Beginner to
-                                            Expert</h5>
+                                        <h5 class="card-title">The Ultimate MySQL Bootcamp: Go from SQL Beginner to Expert
+                                        </h5>
                                         <p class="card-text">Coll Steele Ian Schoonover</p>
                                         <div class="card__stars">
                                             <span>
@@ -243,8 +258,8 @@
                                 <div class="card">
                                     <img class="card-img-top" src="./image/kh3.jpg" alt="Course1">
                                     <div class="card-body">
-                                        <h5 class="card-title">Advanced CSS and Sass: Flexbox, Grid, Animations and
-                                            More!</h5>
+                                        <h5 class="card-title">Advanced CSS and Sass: Flexbox, Grid, Animations and More!
+                                        </h5>
                                         <p class="card-text">Coll Steele Ian Schoonover</p>
                                         <div class="card__stars">
                                             <span>
@@ -312,8 +327,8 @@
                                 <div class="card">
                                     <img class="card-img-top" src="./image/kh6.jpg" alt="Course1">
                                     <div class="card-body">
-                                        <h5 class="card-title">iOS 12 & Swift - The Complete iOS App Development
-                                            Bootcamp</h5>
+                                        <h5 class="card-title">iOS 12 & Swift - The Complete iOS App Development Bootcamp
+                                        </h5>
                                         <p class="card-text">Coll Steele Ian Schoonover</p>
                                         <div class="card__stars">
                                             <span>
@@ -339,8 +354,8 @@
                                 <div class="card">
                                     <img class="card-img-top" src="./image/kh1.jpg" alt="Course1">
                                     <div class="card-body">
-                                        <h5 class="card-title">The Ultimate MySQL Bootcamp: Go from SQL Beginner to
-                                            Expert</h5>
+                                        <h5 class="card-title">The Ultimate MySQL Bootcamp: Go from SQL Beginner to Expert
+                                        </h5>
                                         <p class="card-text">Coll Steele Ian Schoonover</p>
                                         <div class="card__stars">
                                             <span>
@@ -385,8 +400,8 @@
                                 <div class="card">
                                     <img class="card-img-top" src="./image/kh3.jpg" alt="Course1">
                                     <div class="card-body">
-                                        <h5 class="card-title">Advanced CSS and Sass: Flexbox, Grid, Animations and
-                                            More!</h5>
+                                        <h5 class="card-title">Advanced CSS and Sass: Flexbox, Grid, Animations and More!
+                                        </h5>
                                         <p class="card-text">Coll Steele Ian Schoonover</p>
                                         <div class="card__stars">
                                             <span>
@@ -454,8 +469,8 @@
                                 <div class="card">
                                     <img class="card-img-top" src="./image/kh6.jpg" alt="Course1">
                                     <div class="card-body">
-                                        <h5 class="card-title">iOS 12 & Swift - The Complete iOS App Development
-                                            Bootcamp</h5>
+                                        <h5 class="card-title">iOS 12 & Swift - The Complete iOS App Development Bootcamp
+                                        </h5>
                                         <p class="card-text">Coll Steele Ian Schoonover</p>
                                         <div class="card__stars">
                                             <span>
@@ -480,8 +495,8 @@
                                 <div class="card">
                                     <img class="card-img-top" src="./image/kh1.jpg" alt="Course1">
                                     <div class="card-body">
-                                        <h5 class="card-title">The Ultimate MySQL Bootcamp: Go from SQL Beginner to
-                                            Expert</h5>
+                                        <h5 class="card-title">The Ultimate MySQL Bootcamp: Go from SQL Beginner to Expert
+                                        </h5>
                                         <p class="card-text">Coll Steele Ian Schoonover</p>
                                         <div class="card__stars">
                                             <span>
@@ -526,8 +541,8 @@
                                 <div class="card">
                                     <img class="card-img-top" src="./image/kh3.jpg" alt="Course1">
                                     <div class="card-body">
-                                        <h5 class="card-title">Advanced CSS and Sass: Flexbox, Grid, Animations and
-                                            More!</h5>
+                                        <h5 class="card-title">Advanced CSS and Sass: Flexbox, Grid, Animations and More!
+                                        </h5>
                                         <p class="card-text">Coll Steele Ian Schoonover</p>
                                         <div class="card__stars">
                                             <span>
@@ -595,8 +610,8 @@
                                 <div class="card">
                                     <img class="card-img-top" src="./image/kh6.jpg" alt="Course1">
                                     <div class="card-body">
-                                        <h5 class="card-title">iOS 12 & Swift - The Complete iOS App Development
-                                            Bootcamp</h5>
+                                        <h5 class="card-title">iOS 12 & Swift - The Complete iOS App Development Bootcamp
+                                        </h5>
                                         <p class="card-text">Coll Steele Ian Schoonover</p>
                                         <div class="card__stars">
                                             <span>
@@ -621,8 +636,8 @@
                                 <div class="card">
                                     <img class="card-img-top" src="./image/kh1.jpg" alt="Course1">
                                     <div class="card-body">
-                                        <h5 class="card-title">The Ultimate MySQL Bootcamp: Go from SQL Beginner to
-                                            Expert</h5>
+                                        <h5 class="card-title">The Ultimate MySQL Bootcamp: Go from SQL Beginner to Expert
+                                        </h5>
                                         <p class="card-text">Coll Steele Ian Schoonover</p>
                                         <div class="card__stars">
                                             <span>
@@ -667,8 +682,8 @@
                                 <div class="card">
                                     <img class="card-img-top" src="./image/kh3.jpg" alt="Course1">
                                     <div class="card-body">
-                                        <h5 class="card-title">Advanced CSS and Sass: Flexbox, Grid, Animations and
-                                            More!</h5>
+                                        <h5 class="card-title">Advanced CSS and Sass: Flexbox, Grid, Animations and More!
+                                        </h5>
                                         <p class="card-text">Coll Steele Ian Schoonover</p>
                                         <div class="card__stars">
                                             <span>
@@ -736,8 +751,8 @@
                                 <div class="card">
                                     <img class="card-img-top" src="./image/kh6.jpg" alt="Course1">
                                     <div class="card-body">
-                                        <h5 class="card-title">iOS 12 & Swift - The Complete iOS App Development
-                                            Bootcamp</h5>
+                                        <h5 class="card-title">iOS 12 & Swift - The Complete iOS App Development Bootcamp
+                                        </h5>
                                         <p class="card-text">Coll Steele Ian Schoonover</p>
                                         <div class="card__stars">
                                             <span>
@@ -762,8 +777,8 @@
                                 <div class="card">
                                     <img class="card-img-top" src="./image/kh1.jpg" alt="Course1">
                                     <div class="card-body">
-                                        <h5 class="card-title">The Ultimate MySQL Bootcamp: Go from SQL Beginner to
-                                            Expert</h5>
+                                        <h5 class="card-title">The Ultimate MySQL Bootcamp: Go from SQL Beginner to Expert
+                                        </h5>
                                         <p class="card-text">Coll Steele Ian Schoonover</p>
                                         <div class="card__stars">
                                             <span>
@@ -808,8 +823,8 @@
                                 <div class="card">
                                     <img class="card-img-top" src="./image/kh3.jpg" alt="Course1">
                                     <div class="card-body">
-                                        <h5 class="card-title">Advanced CSS and Sass: Flexbox, Grid, Animations and
-                                            More!</h5>
+                                        <h5 class="card-title">Advanced CSS and Sass: Flexbox, Grid, Animations and More!
+                                        </h5>
                                         <p class="card-text">Coll Steele Ian Schoonover</p>
                                         <div class="card__stars">
                                             <span>
@@ -877,8 +892,8 @@
                                 <div class="card">
                                     <img class="card-img-top" src="./image/kh6.jpg" alt="Course1">
                                     <div class="card-body">
-                                        <h5 class="card-title">iOS 12 & Swift - The Complete iOS App Development
-                                            Bootcamp</h5>
+                                        <h5 class="card-title">iOS 12 & Swift - The Complete iOS App Development Bootcamp
+                                        </h5>
                                         <p class="card-text">Coll Steele Ian Schoonover</p>
                                         <div class="card__stars">
                                             <span>
@@ -903,8 +918,8 @@
                                 <div class="card">
                                     <img class="card-img-top" src="./image/kh1.jpg" alt="Course1">
                                     <div class="card-body">
-                                        <h5 class="card-title">The Ultimate MySQL Bootcamp: Go from SQL Beginner to
-                                            Expert</h5>
+                                        <h5 class="card-title">The Ultimate MySQL Bootcamp: Go from SQL Beginner to Expert
+                                        </h5>
                                         <p class="card-text">Coll Steele Ian Schoonover</p>
                                         <div class="card__stars">
                                             <span>
@@ -949,8 +964,8 @@
                                 <div class="card">
                                     <img class="card-img-top" src="./image/kh3.jpg" alt="Course1">
                                     <div class="card-body">
-                                        <h5 class="card-title">Advanced CSS and Sass: Flexbox, Grid, Animations and
-                                            More!</h5>
+                                        <h5 class="card-title">Advanced CSS and Sass: Flexbox, Grid, Animations and More!
+                                        </h5>
                                         <p class="card-text">Coll Steele Ian Schoonover</p>
                                         <div class="card__stars">
                                             <span>
@@ -1018,8 +1033,8 @@
                                 <div class="card">
                                     <img class="card-img-top" src="./image/kh6.jpg" alt="Course1">
                                     <div class="card-body">
-                                        <h5 class="card-title">iOS 12 & Swift - The Complete iOS App Development
-                                            Bootcamp</h5>
+                                        <h5 class="card-title">iOS 12 & Swift - The Complete iOS App Development Bootcamp
+                                        </h5>
                                         <p class="card-text">Coll Steele Ian Schoonover</p>
                                         <div class="card__stars">
                                             <span>
@@ -1044,8 +1059,8 @@
                                 <div class="card">
                                     <img class="card-img-top" src="./image/kh1.jpg" alt="Course1">
                                     <div class="card-body">
-                                        <h5 class="card-title">The Ultimate MySQL Bootcamp: Go from SQL Beginner to
-                                            Expert</h5>
+                                        <h5 class="card-title">The Ultimate MySQL Bootcamp: Go from SQL Beginner to Expert
+                                        </h5>
                                         <p class="card-text">Coll Steele Ian Schoonover</p>
                                         <div class="card__stars">
                                             <span>
@@ -1090,8 +1105,8 @@
                                 <div class="card">
                                     <img class="card-img-top" src="./image/kh3.jpg" alt="Course1">
                                     <div class="card-body">
-                                        <h5 class="card-title">Advanced CSS and Sass: Flexbox, Grid, Animations and
-                                            More!</h5>
+                                        <h5 class="card-title">Advanced CSS and Sass: Flexbox, Grid, Animations and More!
+                                        </h5>
                                         <p class="card-text">Coll Steele Ian Schoonover</p>
                                         <div class="card__stars">
                                             <span>
@@ -1159,8 +1174,8 @@
                                 <div class="card">
                                     <img class="card-img-top" src="./image/kh6.jpg" alt="Course1">
                                     <div class="card-body">
-                                        <h5 class="card-title">iOS 12 & Swift - The Complete iOS App Development
-                                            Bootcamp</h5>
+                                        <h5 class="card-title">iOS 12 & Swift - The Complete iOS App Development Bootcamp
+                                        </h5>
                                         <p class="card-text">Coll Steele Ian Schoonover</p>
                                         <div class="card__stars">
                                             <span>
@@ -1451,11 +1466,8 @@
                                 </div>
                             </div>
                         </div>
-                        <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil fugit
-                            officiis porro enim, atque sint sequi, ab voluptatibus ipsa beatae deserunt illo itaque
-                            impedit! Quidem labore ab laborum delectus ad magni deserunt libero dolor accusantium in
-                            cupiditate optio, voluptate blanditiis porro eos reiciendis facere architecto officiis,
-                            consequuntur, vitae quisquam dolorem.</p>
+                        <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil fugit officiis porro enim, atque sint sequi, ab voluptatibus ipsa beatae deserunt illo itaque impedit! Quidem labore ab laborum delectus ad magni deserunt libero dolor
+                            accusantium in cupiditate optio, voluptate blanditiis porro eos reiciendis facere architecto officiis, consequuntur, vitae quisquam dolorem.</p>
                     </div>
                 </div>
 
@@ -1475,11 +1487,8 @@
                                 </div>
                             </div>
                         </div>
-                        <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil fugit
-                            officiis porro enim, atque sint sequi, ab voluptatibus ipsa beatae deserunt illo itaque
-                            impedit! Quidem labore ab laborum delectus ad magni deserunt libero dolor accusantium in
-                            cupiditate optio, voluptate blanditiis porro eos reiciendis facere architecto officiis,
-                            consequuntur, vitae quisquam dolorem.</p>
+                        <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil fugit officiis porro enim, atque sint sequi, ab voluptatibus ipsa beatae deserunt illo itaque impedit! Quidem labore ab laborum delectus ad magni deserunt libero dolor
+                            accusantium in cupiditate optio, voluptate blanditiis porro eos reiciendis facere architecto officiis, consequuntur, vitae quisquam dolorem.</p>
                     </div>
                 </div>
 
@@ -1500,11 +1509,8 @@
                                 </div>
                             </div>
                         </div>
-                        <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil fugit
-                            officiis porro enim, atque sint sequi, ab voluptatibus ipsa beatae deserunt illo itaque
-                            impedit! Quidem labore ab laborum delectus ad magni deserunt libero dolor accusantium in
-                            cupiditate optio, voluptate blanditiis porro eos reiciendis facere architecto officiis,
-                            consequuntur, vitae quisquam dolorem.</p>
+                        <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil fugit officiis porro enim, atque sint sequi, ab voluptatibus ipsa beatae deserunt illo itaque impedit! Quidem labore ab laborum delectus ad magni deserunt libero dolor
+                            accusantium in cupiditate optio, voluptate blanditiis porro eos reiciendis facere architecto officiis, consequuntur, vitae quisquam dolorem.</p>
                     </div>
                 </div>
 
@@ -1525,11 +1531,8 @@
                                 </div>
                             </div>
                         </div>
-                        <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil fugit
-                            officiis porro enim, atque sint sequi, ab voluptatibus ipsa beatae deserunt illo itaque
-                            impedit! Quidem labore ab laborum delectus ad magni deserunt libero dolor accusantium in
-                            cupiditate optio, voluptate blanditiis porro eos reiciendis facere architecto officiis,
-                            consequuntur, vitae quisquam dolorem.</p>
+                        <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil fugit officiis porro enim, atque sint sequi, ab voluptatibus ipsa beatae deserunt illo itaque impedit! Quidem labore ab laborum delectus ad magni deserunt libero dolor
+                            accusantium in cupiditate optio, voluptate blanditiis porro eos reiciendis facere architecto officiis, consequuntur, vitae quisquam dolorem.</p>
                     </div>
                 </div>
 
@@ -1550,11 +1553,8 @@
                                 </div>
                             </div>
                         </div>
-                        <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil fugit
-                            officiis porro enim, atque sint sequi, ab voluptatibus ipsa beatae deserunt illo itaque
-                            impedit! Quidem labore ab laborum delectus ad magni deserunt libero dolor accusantium in
-                            cupiditate optio, voluptate blanditiis porro eos reiciendis facere architecto officiis,
-                            consequuntur, vitae quisquam dolorem.</p>
+                        <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil fugit officiis porro enim, atque sint sequi, ab voluptatibus ipsa beatae deserunt illo itaque impedit! Quidem labore ab laborum delectus ad magni deserunt libero dolor
+                            accusantium in cupiditate optio, voluptate blanditiis porro eos reiciendis facere architecto officiis, consequuntur, vitae quisquam dolorem.</p>
                     </div>
                 </div>
 
@@ -1575,11 +1575,8 @@
                                 </div>
                             </div>
                         </div>
-                        <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil fugit
-                            officiis porro enim, atque sint sequi, ab voluptatibus ipsa beatae deserunt illo itaque
-                            impedit! Quidem labore ab laborum delectus ad magni deserunt libero dolor accusantium in
-                            cupiditate optio, voluptate blanditiis porro eos reiciendis facere architecto officiis,
-                            consequuntur, vitae quisquam dolorem.</p>
+                        <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nihil fugit officiis porro enim, atque sint sequi, ab voluptatibus ipsa beatae deserunt illo itaque impedit! Quidem labore ab laborum delectus ad magni deserunt libero dolor
+                            accusantium in cupiditate optio, voluptate blanditiis porro eos reiciendis facere architecto officiis, consequuntur, vitae quisquam dolorem.</p>
                     </div>
                 </div>
             </div>
@@ -1622,16 +1619,16 @@
                 <div class="col-md-6 col-sm-12 col-12 border-right">
                     <div class="jobs__items">
                         <h2>Become an instructor</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et ad impedit dolore nulla adipisci
-                            natus!</p>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et ad impedit dolore nulla adipisci natus!
+                        </p>
                         <button class="button--red">Start teaching today</button>
                     </div>
                 </div>
                 <div class="col-md-6 col-sm-12 col-12">
                     <div class="jobs__items">
                         <h2>Udemy For Bussiness</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et ad impedit dolore nulla adipisci
-                            natus!</p>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Et ad impedit dolore nulla adipisci natus!
+                        </p>
                         <button class="button--red">Get Udemy for Bussiness</button>
                     </div>
                 </div>
@@ -1688,8 +1685,7 @@
                 </div>
                 <div class="col-md-3 col-12">
                     <div class="btn-group dropup text-md-right">
-                        <button type="button" class="btn button--dropup dropdown-toggle" data-toggle="dropdown"
-                            aria-haspopup="true" aria-expanded="false">
+                        <button type="button" class="btn button--dropup dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             <i class="fa fa-globe-americas"></i> English
                         </button>
                         <div class="dropdown-menu">
@@ -1710,7 +1706,7 @@
         <div class="footer__bottom">
             <div class="row">
                 <div class="col-md-6 col-12">
-                    <img src="./image/logo-coral.svg" alt="Logo footer">
+                    <img src="./image/logo-coral.svg" alt="Logo black">
                     <span>Copyright &copy; 2020 Udemy, Inc.</span>
                 </div>
                 <div class="col-md-6 col-12">
@@ -1728,19 +1724,13 @@
     </footer>
 
     <!-- jquery  -->
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
 
     <!-- popper -->
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 
     <!-- BS4 -->
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 
     <!-- OWL JS -->
     <script src="./js/owl.carousel.min.js"></script>
@@ -1785,7 +1775,7 @@
                     margin: 5
                 },
                 768: {
-                     items: 3,
+                    items: 3,
                     margin: 5
                 },
                 1000: {

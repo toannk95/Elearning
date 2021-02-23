@@ -13,6 +13,12 @@
             img {
                 width: 110px;
             }
+            .logo-black {
+                display: inline-block;
+            }
+            .logo-white {
+                display: none;
+            }
         }
         .myNavBar__categories {
             flex-grow: 1;
@@ -25,7 +31,7 @@
         }
         .myNavBar__form-search {
             flex-grow: 8;
-            @include styleFormSearch($color-white-cream, $color-white-0, $color-gray-4);
+            @include styleFormSearch($color-white-cream, $color-white-0, $color-gray-4, $color-black-light);
         }
     }
     .myNavBar__right {
@@ -96,14 +102,13 @@
             }
         }
     }
-
     @media screen and (min-width:1200px) and (max-width:1375px) {
         .myNavBar__right {
             .navbar-nav {
-                .nav-item{
+                .nav-item {
                     white-space: nowrap;
                     text-align: center;
-                    .nav-link{
+                    .nav-link {
                         font-size: $fs-3 - 1;
                     }
                     .overlay {
@@ -112,31 +117,29 @@
                 }
             }
         }
-
         .myNavBar--reset {
             padding-left: 0;
         }
     }
-
     // max-width: 1200px;
     @include responsive("extra-large") {
-        .business,.instructor {
+        .business,
+        .instructor {
             display: none;
         }
-        .myNavBar__right{
+        .myNavBar__right {
             .navbar-nav {
                 justify-content: space-around;
             }
         }
     }
-
     @include responsive("medium") {
         .myNavBar__left {
-            .myNavBar__categories, .myNavBar__form-search {
+            .myNavBar__categories,
+            .myNavBar__form-search {
                 display: none;
             }
         }
-
         .myNavBar__right {
             width: 50%;
             margin-left: auto;
@@ -149,4 +152,3 @@
         }
     }
 }
-
