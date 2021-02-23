@@ -71,3 +71,18 @@
         }
     }
 }
+
+@mixin responsive($screen) {
+    // check exist variable
+    @if map-has-key($map: $breakpoints, $key: $screen) {
+        $value: map-get($map: $breakpoints, $key: $screen); // get value when set data for variable
+        @media screen and (max-width: $value){
+            @content;
+        }
+    } @else {
+        @warn "`{$screen}` isn't valid in breakpoints";
+    }
+}
+
+
+

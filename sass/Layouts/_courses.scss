@@ -30,5 +30,26 @@
                 }
             }
         }
+
+   @include responsive("screen-1") {
+    .courses__content {
+        .card {
+            .card-body {
+                .card-title {
+                    @include styleText($color-black-0, $fs-1, $fw-1);
+                    margin-bottom: $mg-0 + 5;
+                }
+            }
+        }
     }
+    }
+
+    @include responsive("medium") {
+        .courses__content {
+            .courses__left {
+                padding: $pd-3; 
+            }
+        }
+    }
+}
 }
